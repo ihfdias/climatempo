@@ -52,3 +52,11 @@ searchBtn.addEventListener("click", (e) => {
     showWeatherData(city);
 
 })
+
+cityInput.addEventListener("keyup", (e) => {
+    if(e.code === "Enter") {
+        const city = e.target.value
+
+        showWeatherData(city);
+    }
+})
